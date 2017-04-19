@@ -1,0 +1,5 @@
+Group All
+Switch mqttsw1 "Switch 1" (all) {mqtt=">[broker:/testsw/1:command:on:1],>[broker:/testsw/1:command:off:0]"}
+Switch mqttsw2 "Switch 2" (all) {mqtt=">[broker:/testsw/2:command:off:0],>[broker:/testsw/2:command:on:1]"}
+Switch lamp1 "Office Lamp" (all) {mqtt=">[broker:/Sonoff1in:command:on:1],>[broker:/Sonoff1in:command:off:1],<[broker:/Sonoff1out:state:default"}
+Number Office_temp "Temperature [%.1f °C]" <temperature> {mqtt="<[broker:/home/1/ard2/s1/state:state:default]"}

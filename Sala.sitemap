@@ -1,0 +1,9 @@
+sitemap demo label="Main Menu"
+{
+ Frame label="MQTT" {
+ Switch item=mqttsw1 label="MQTT Switch 1"
+ Switch item=mqttsw2 label="MQTT Switch 2"
+ Switch item=lamp1 label="Office Lamp"
+ Text item=Office_temp
+ }
+}
